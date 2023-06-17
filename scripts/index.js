@@ -2,9 +2,9 @@
 
 
 //Store Data
-let username = "Lester Blake";
-let profilePicture = "./assets/images/man.png";
-let jobTitle = "Software Engineer";
+// let username = "Lester Blake";
+// let profilePicture = "./assets/images/man.png";
+// let jobTitle = "Software Engineer";
 
 //DOM Manipulation
 let usernameElement = document.querySelectorAll(".data-username");
@@ -29,3 +29,30 @@ profilePictureElement.src = profilePicture;
 
 //Create an element
 //.appendChild
+
+//17 June - Functions and Event Handling Challenge
+//2. Create userProfile Object
+let userProfile = {
+    username:"", 
+    profilePicture:"",
+    jobTitle:""
+}; 
+
+function loadUserProfile() {
+
+    let usernameElement = document.querySelectorAll(".data-username");
+    let jobTitleElement = document.querySelector(".data-jobtitle");
+    let profilePictureElement = document.querySelector(".data-profile-picture");
+
+    usernameElement.innerText = userProfile.username; 
+    jobTitleElement.innerText = userProfile.jobTitle;
+    profilePictureElement.src = userProfile.profilePicture;
+
+    console.log("Loading User Profile...")
+}
+
+window.onload = function(e) {loadUserProfile(e)}
+
+//5. Create post on the invoke of the function for browser load
+
+
