@@ -21,3 +21,11 @@ let profilePictureElement = document.querySelector(".data-profile-picture");
 profilePictureElement.src = profilePicture;
 
 //Next step is to store this in an object and execute
+
+//Stretch!
+//Target the element
+//store the element in some temp variable
+//add/remove/update element
+
+//Create an element
+//.appendChild
